@@ -4,7 +4,7 @@ import psutil
 battery = psutil.sensors_battery()
 #Dic with points to check
 battery_status = {
-    'percent_battery':100,#=> we can replace the battery.percent value for any number in order to simulate the process.
+    'percent_battery': battery.percent,#=> we can replace the battery.percent value for any number in order to simulate the process.
     'power_plugged':battery.power_plugged
 }
 battery_porcentage = [range(1,100)]
